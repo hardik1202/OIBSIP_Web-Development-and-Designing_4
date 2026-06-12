@@ -76,14 +76,18 @@ No backend frameworks or databases were used.
 - [ ] Connect to PHP and MySQL for a real backend database
 - [ ] Add user profile editing capabilities
 - [ ] Add "Forgot Password" functionality
-- [ ] Add Dark mode / Light mode toggle
+- [ ] Add Dark mode / Light mode toggle      
 ---
+
+
 ## Author
 **hardik jethava**  
----
+
+
 ## License
 This project is open source and free to use for learning purposes.
----
+
+
 ## Contact
 If you have any questions or suggestions, feel free to open an issue on GitHub.
 ⭐ If you like this project, give it a star on GitHub!
