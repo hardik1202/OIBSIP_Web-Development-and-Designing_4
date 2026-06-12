@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inspiration Hub - My App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Load FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .inspire-box {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            color: #155724;
+            line-height: 1.6;
+        }
+        .quote-box {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .quote-box h3 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2d3748;
+            line-height: 1.4;
+            text-transform: capitalize;
+            background: -webkit-linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .kalam-box {
+            background: #fff8e1;
+            border-left: 5px solid #ffb300;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+            color: #3e2723;
+        }
+        .kalam-box h3 {
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #d84315;
+        }
+        .kalam-list {
+            margin-left: 20px;
+            line-height: 1.8;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .kalam-author {
+            text-align: right;
+            margin-top: 15px;
+            font-style: italic;
+            font-weight: 600;
+            color: #5d4037;
+        }
+    </style>
+</head>
+<body onload="checkAuth()">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h2 id="welcomeMessage">Welcome!</h2>
+            <button onclick="handleLogout()" class="btn btn-small">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </div>
+
+        <!-- New Image Quote Section -->
+        <div class="quote-box">
+            <h3>
+                "Life Is A Blank Page,<br>
+                To Make It Interesting<br>
+                You Have To Draw It Yourself"
+            </h3>
+        </div>
+
+        <!-- A.P.J. Abdul Kalam Section -->
+        <div class="kalam-box">
+            <h3>Speak 5 lines to Yourself Every Morning</h3>
+            <ol class="kalam-list">
+                <li>God is always with me.</li>
+                <li>Today is my day.</li>
+                <li>I am a Winner.</li>
+                <li>I am the Best.</li>
+                <li>I can do it.</li>
+            </ol>
+            <p class="kalam-author">- A. P. J. Abdul Kalam</p>
+        </div>
+
+        <!-- Career Inspiration Section -->
+        <div class="inspire-box">
+            <h3><i class="fas fa-rocket"></i> Career Inspiration</h3>
+            <p style="margin-top: 10px;">Your career is a marathon, not a sprint. Every line of code you write, every bug you struggle to fix, and every new concept you learn is a stepping stone toward greatness. Don't be afraid of failing, because in the tech world, failure is just your code telling you exactly how to get it right the next time. Keep pushing your limits, stay curious, and remember that every expert was once a beginner who refused to quit!</p>
+        </div>
+        
+    </div>
+
+    <!-- Include our JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - My App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome Back</h2>
+        <p style="color: #718096; margin-bottom: 25px; font-size: 14px;">Please enter your details to sign in.</p>
+        
+        <!-- This paragraph will show our error messages from JavaScript -->
+        <p id="loginMessage"></p>
+        
+        <form id="loginForm" onsubmit="handleLogin(event)">
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="btn">Sign In</button>
+        </form>
+        
+        <a href="register.html" class="link">Don't have an account? Sign up</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
